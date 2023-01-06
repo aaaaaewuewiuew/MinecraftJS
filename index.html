@@ -151,9 +151,9 @@
 		varying float vFog;
 
 		vec4 fog(vec4 color) {
-			color.r += (0.33 - color.r) * vFog;
-			color.g += (0.54 - color.g) * vFog;
-			color.b += (0.72 - color.b) * vFog;
+			color.r += (200 - color.r) * vFog;
+			color.g += (0 - color.g) * vFog;
+			color.b += (0 - color.b) * vFog;
 			return color;
 		}
 
@@ -390,7 +390,7 @@ function MineKhan() {
 		},
 		{
 			name: "grass",
-			textures: [ "dirt", "grassTop", "grassSide" ],
+			textures: [ "soulSand", "soulSand", "soulSand" ],
 		},
 		{ name: "dirt" },
 		{ name: "stone" },
